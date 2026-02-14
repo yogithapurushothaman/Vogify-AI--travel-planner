@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voyagify - Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+<h1>Welcome to Voyagify 🌍</h1>
+
+<div class="planner">
+    <input type="text" id="destination" placeholder="Enter Destination">
+    <input type="date" id="startDate">
+    <input type="date" id="endDate">
+    <select id="transport">
+        <option>Flight</option>
+        <option>Train</option>
+        <option>Bus</option>
+    </select>
+    <button onclick="generatePlan()">Generate Itinerary</button>
+</div>
+
+<div id="output"></div>
+<div id="map"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
